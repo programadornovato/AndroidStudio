@@ -7,8 +7,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var p1=Persona("Juan",1)
-        //p1.inicializar("Juan",1)
-        println("Nombre=${p1.nombre} edad=${p1.edad}")
+        var v1=Vehiculo("Vocho","1980")
+        //println("marca=${v1.marca} modelo=${v1.modelo}")
+        v1.acelerar()
+        var v2=Vehiculo("654654")
+        v2.acelerar(6)
     }
 }
