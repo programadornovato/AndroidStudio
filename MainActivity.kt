@@ -8,10 +8,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var matBasicas=Basicas(1,2)
-        println("Suma=${matBasicas.suma()}")
-        println("Resta=${matBasicas.resta()}")
-        println("Multiplicacion=${matBasicas.multiplicacion()}")
-        println("Divicion=${matBasicas.divicion()}")
+        var e1=Empleado()
+        e1.edad=20
+        println(e1.edad)
+        e1.nombre=""
+        println(e1.nombre)
+        /*
+        var e1=Empleado()
+        e1.setEdad(17)
+        println(e1.getEdad())
+        e1.setNombre("juan")
+        println(e1.getNombre())
+        */
     }
 }
