@@ -8,17 +8,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var e1=Empleado()
-        e1.edad=20
-        println(e1.edad)
-        e1.nombre=""
-        println(e1.nombre)
-        /*
-        var e1=Empleado()
-        e1.setEdad(17)
-        println(e1.getEdad())
-        e1.setNombre("juan")
-        println(e1.getNombre())
-        */
+        var c1=MiClase()
+        println("c1.normal=${c1.normal}")
+        println("MiClase.estatico=${MiClase.estatico}")
+        c1.normal="Modificando el atributo normal"
+        MiClase.estatico="Modificando el atributo estatico"
+        println("c1.normal=${c1.normal}")
+        println("MiClase.estatico=${MiClase.estatico}")
+
     }
 }
