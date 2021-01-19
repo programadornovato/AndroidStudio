@@ -8,14 +8,19 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Carros.altura=1.6
-        var c1=Carros("Blanco",1981,"Vocho")
-        c1.mustraCarro()
-        var c2=Carros("Azul",1982,"Vocho")
-        c2.mustraCarro()
-        var c3=Carros("Verde",1983,"Vocho")
-        c3.mustraCarro()
-        var c4=Carros("Negro",1984,"Vocho")
-        c4.mustraCarro()
+        var ladoCuadrado=5.0
+
+        var ladoArectangulo=5.2
+        var ladoBrectangulo=10.0
+
+        var cuadrado=Cuadrilatero(ladoCuadrado)
+        println("CUADRADO")
+        println("Area=${cuadrado.area}")
+        println("Perimetro=${cuadrado.perimetro}")
+
+        var rectangulo=Cuadrilatero(ladoArectangulo,ladoBrectangulo)
+        println("RECTANGULO")
+        println("Area=${rectangulo.area}")
+        println("Perimetro=${rectangulo.perimetro}")
     }
 }
