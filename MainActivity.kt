@@ -8,15 +8,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var p1=Personas("Juan","Perez",22)
-        p1.mostrarNombre()
-        p1.mostrarApellido()
-        p1.mostrarEdad()
-        var e1=Estudiantes("Pepe","Perez",25,"54654",10.0)
-        e1.mostrarNombre()
-        e1.mostrarApellido()
-        e1.mostrarEdad()
-        e1.mostrarCodigoEstudiante()
-        e1.mostrarCalificacion()
+        /*
+        var a=Automotores()
+        a.llantas()
+        */
+        var m=Motocicletas()
+        m.llantas()
+        var a=Autos()
+        a.llantas()
+        var c=Camiones()
+        c.llantas()
     }
 }
